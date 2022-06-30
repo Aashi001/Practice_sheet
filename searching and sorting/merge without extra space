@@ -1,0 +1,16 @@
+ int i = n-1, j = 0;
+      while(i>=0 && j<m){ 
+          if(arr1[i] > arr2[j]){    //if i is greater than j then swap
+              int temp = arr1[i];
+              arr1[i] = arr2[j];
+              arr2[j] = temp;
+              i--;
+              j++;
+          }
+          else{      //if not then break the loop as it's sorted
+              break;
+          }
+      }
+      Arrays.sort(arr1); //now sort the resultant array1 and 2
+      Arrays.sort(arr2);
+
